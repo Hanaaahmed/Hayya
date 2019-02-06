@@ -1,6 +1,11 @@
-# Hayya
-import React from 'react'
-import { Field, reduxForm } from 'redux-form'
+import React from "react";
+import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import { Values } from "redux-form-website-template";
+import store from "./store";
+import showResults from "./showResults";
+import SimpleForm from "./SimpleForm";
+
 
 const SimpleForm = (props) => {
   const { handleSubmit, pristine, reset, submitting } = props
